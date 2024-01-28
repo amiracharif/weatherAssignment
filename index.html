@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/syle.css">
+    <title>Weather Session</title>
+</head>
+<body>
+    
+    <main class="interface" id="interface">
+        <div class="container">
+          <header>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="location"></p>
+            </div>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="search"
+                placeholder="Search city..."
+                id="searchBox"
+                spellcheck="false"
+                autocomplete="off"
+              />
+            </div>
+          </header>
+  
+          <section class="forecast row">
+            <div class="forecast-data col-md-9">
+              <h2>Weather</h2>
+              <div class="forecast-cards">
+       
+
+               <div class="card" data-index=0 >
+                <div class="card-header">
+                  <div class="day">Sunday</div>
+                </div>
+                <div class="card-body">
+                  <img src="./images/conditions/sunny.svg"/>
+                  <div class="degree">12°C</div>
+                </div>
+                <div class="card-data">
+                  <ul class="left-column">
+                    <li>Real Feel: <span class="real-feel">11.5°C</span></li>
+                    <li>Wind: <span class="wind">6.8 K/h</span></li>
+                    <li>Pressure: <span class="pressure">1015 Mb</span></li>
+                    <li>Humidity: <span class="humidity">76 %</span></li>
+                  </ul>
+                  <ul class="right-column">
+                    <li>Sunrise: <span class="sunrise">  05:17 PM </span></li>
+                    <li>Sunset: <span class="sunset">06:52 AM</span></li>
+                  </ul>
+                </div>
+              </div>
+            
+           
+
+
+
+
+
+
+              </div>
+            </div>
+
+
+            <div class="rain-chance col-md-3">
+              <h3>Chance of rain</h3>
+              <div class="rain-day-hours">
+                <div class="clock" data-clock="9">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>9 Am</p>
+                </div>
+                <div class="clock" data-clock="11">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>11 Am</p>
+                </div>
+                <div class="clock" data-clock="15">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>3 PM</p>
+                </div>
+                <div class="clock" data-clock="19">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>7 PM</p>
+                </div>
+                <div class="clock" data-clock="22">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>10 PM</p>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="recent-cities row">
+            <div class="recent-header">
+              <h2>Recent Cities</h2>
+              <button>Clear All <i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+
+
+            <div class="city-items"></div>
+          </section>
+        </div>
+      </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
